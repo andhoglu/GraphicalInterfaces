@@ -79,7 +79,6 @@ public class AddressBookView extends javax.swing.JFrame {
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         setName("applicationFrame"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(550, 370));
         setResizable(false);
 
         jToolBar1.setFloatable(false);
@@ -311,6 +310,7 @@ public class AddressBookView extends javax.swing.JFrame {
 
         fileMenu.setText(bundle1.getString("fileMenu.text")); // NOI18N
 
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/addressbook/resources/New16.gif"))); // NOI18N
         jMenuItem1.setText(bundle1.getString("newContactMenuItem.text")); // NOI18N
         jMenuItem1.setToolTipText("");
@@ -321,6 +321,7 @@ public class AddressBookView extends javax.swing.JFrame {
         });
         fileMenu.add(jMenuItem1);
 
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/addressbook/resources/Delete16.gif"))); // NOI18N
         jMenuItem2.setText(bundle1.getString("deleteContactMenuItem.text")); // NOI18N
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
