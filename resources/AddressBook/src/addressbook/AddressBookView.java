@@ -79,6 +79,7 @@ public class AddressBookView extends javax.swing.JFrame {
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
         setName("applicationFrame"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(550, 390));
         setResizable(false);
 
         jToolBar1.setFloatable(false);
@@ -126,6 +127,8 @@ public class AddressBookView extends javax.swing.JFrame {
         jScrollPane1.setViewportView(contactList);
 
         jSplitPane1.setLeftComponent(jScrollPane1);
+
+        jPanel1.setPreferredSize(new java.awt.Dimension(366, 350));
 
         jLabel1.setText(bundle1.getString("firstNameLabel.text")); // NOI18N
 
@@ -301,7 +304,7 @@ public class AddressBookView extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(cityTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 140, Short.MAX_VALUE))
+                .addGap(0, 100, Short.MAX_VALUE))
         );
 
         fNameTextField.getAccessibleContext().setAccessibleName("");
@@ -368,7 +371,7 @@ public class AddressBookView extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSplitPane1))
+                .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE))
         );
 
         pack();
